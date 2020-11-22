@@ -4,55 +4,415 @@
 <head>
   <meta charset="utf-8" />
   <title>Nick Massarelli</title>
-  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" />
-  <link rel="stylesheet" type="text/css" href="main.css" / />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: helvetica, sans-serif;
+      font-size: 1.25rem;
+      margin-bottom: 100px;
+      background: white;
+    }
+
+    nav {
+      position: fixed;
+    }
+
+    .container {
+      width: 100vw;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .contvar1 {
+      border-bottom: 1px solid black;
+    }
+
+    .contvar2 {
+      border: none;
+    }
+
+    .item1 {
+      padding: 10px;
+      grid-column: 1/2;
+    }
+
+    .top {
+      height: 23px;
+      background-color: black;
+      width: 23px;
+      border-radius: 50%;
+    }
+
+    .top:hover {
+      background-color: #CDDC3F;
+    }
+
+    .item11 {
+      padding: 10px;
+      grid-column: 2/4;
+    }
+
+    .item12 {
+      padding: 10px;
+      grid-column: 5/7;
+    }
+
+    .item2 {
+      padding: 10px;
+      grid-column: 2/5;
+    }
+
+    .item3 {
+      padding: 10px;
+      grid-column: 2/5;
+    }
+
+    #carousel1 {
+      grid-column: 1/7;
+      margin-top: 100px;
+      padding: 0px 0px 10px 10px;
+    }
+
+    #carousel2 {
+      grid-column: 1/7; 
+      padding: 0px 0px 0px 10px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      border-top: 1px solid black;
+    }
+
+    img {
+      height: 70vh;
+      cursor: pointer;
+    }
+
+    /* links */
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:link {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #cddc39;
+      text-decoration: none;
+    }
+
+    ::selection {
+      background: #cddc39;
+      /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+      background: #cddc39;
+      /* Gecko Browsers */
+    }
+
+    .slider {
+      margin-bottom: 70px;
+    }
+
+    .slider .slide {
+      display: none;
+    }
+
+    .slider .slide.active {
+      display: block;
+    }
+
+    .item4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      
+    }
+
+    .txt-item {
+      grid-column: 1/2;
+      align-self: end;
+      text-align: center;
+      padding-right: 16px;
+      padding-left: 6px;
+      padding-bottom: 2px;
+    }
+
+    .img-item {
+      grid-column: 2/5;
+      grid-row: 1/3;
+    }
+
+    .numeral {
+      text-align: right;
+      grid-column: 1/2;
+      padding-right: 10px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- nav -->
   <nav>
-
-    <div class="container two">
-
-      <div class="top-header notebook-header"><p>FPO</p></div>
-      <div class="top-header"><p><a class="home" href="index.html">Nick Massarelli</a></p></div>
-      <div class="top-header"><p>Graphic Design</p></div>
+    <div class="container contvar1">
+      <div class="item1">
+        <a href="https://www.youtube.com/watch?v=pVrVY540xdc&ab_channel=sarsamis" target="_blank"><div class="top"></div></a>
+      </div>
+      <div class="item11">
+        <p><a class="home" href="index.html">Nick Massarelli</a></p>
+      </div>
+      <!-- <div class="item12">
+        <p><a href="#" target="_blank">résumé</a></p>
+      </div> -->
     </div>
-
-    <div class="container headers">
-      <div class="a"><p></p></div>
-      <div class="a"><p>Currently a student at Yale School of Art</p></div>
-      <!-- <div class="a"><p>0/25</p></div> -->
-      <div class="a spending-head"><p></p></div>
-      <div class="a nutrition-head"><p></p></div>
+    <div class="container contvar1">
+      <div class="item2">
+        <p><a href="mailto:nickmass93@gmail.com" target="_blank">nickmass93@gmail.com</a></p>
+      </div>
+      <div class="item12">
+        <p><a href="https://www.instagram.com/firstlast.us/" target="_blank">firstlast.us</a></p>
+      </div>
     </div>
   </nav>
 
-  <section>
-      <div class="container three">
-
-        <div class="top-header notebook-header"><p></p></div>
-        <div class="top-header"><img src="img_01.jpeg" class="image-of-work" /></div>
-        <div class="top-header"><p></p></div>
+  <div class="container">
+<!-- carousel1 -->
+    <div class="slider" id="carousel1">
+<!--img#1 -->      
+      <div class="item4 slide active">
+        <div class="numeral">
+          <p>1/10</p>
+        </div>
+        <div class="txt-item">
+          <!-- <p><em>Collector's Items</em><br>Exhibited at Yale School of Art's <em>This Time We Know Each Other</em> Second-Year Exhibition</p> -->
+        </div>
+        <div class="img-item" onclick="next('carousel1')">
+          <img src="assets/collectors-items_01.jpg" />
+        </div>
       </div>
-
-      <div class="container headers">
-        <div class="a"><p></p></div>
-        <div class="a"><p></p></div>
-        <!-- <div class="a"><p>0/25</p></div> -->
-        <div class="a spending-head"><p></p></div>
-        <div class="a nutrition-head"><p></p></div>
+<!--img#2 -->  
+      <div class="item4 slide">
+        <div class="numeral">
+          <p>2/10</p>
+        </div>
+        <div class="txt-item">
+          <!-- <p>Collaged images taken at the Pigalle Basketball court in Paris. The works were featured in Atlas by UBIQ</p> -->
+          <p>Photo by Sean Murray</p>
+        </div>
+        <div class="img-item" onclick="next('carousel1')">
+          <img src="assets/atlas_01.jpg" />
+        </div>
       </div>
-  </section>
+<!--img#3 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>3/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p>Retrospecta 43<br>Yale School of Architecture<br>w/ Luiza Dale</p> -->
+        <p>w/ Luiza Dale</p>
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/retrospecta_02.jpg" />
+      </div>
+    </div>
+<!--img#4 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>4/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p>Retrospecta 43<br>Yale School of Architecture<br>w/ Luiza Dale</p> -->
+        <p>w/ Luiza Dale<br>Photo by Sean Murray</p>
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/retrospecta_01.jpg" />
+      </div>
+    </div>
+<!--img#5 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>5/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p><em>Squash Blossom</em><br>Published by IOTA Editions<br>Images by Ian Shiver</p> -->
+        <p>Images by Ian Shiver</p>
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/squash-blossom_01.jpg" />
+      </div>
+    </div>
+<!--img#6 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>6/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p><em>This Time We Know Each Other</em><br>Yale School of Art's second-year exhibition identity<br>w/ Ana Lobo</p> -->
+        <p>w/ Ana Lobo</p>
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/2nd-year-show_01.jpg" />
+      </div>
+    </div>
+<!--img#7 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>7/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p>First Last<br>Issue 06</p> -->
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/first-last_01.jpg" />
+      </div>
+    </div>
+<!--img#8 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>8/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p><em>Contemporary Artists (a publication during a pandemic)</em><br>Museum of Fine Arts, Boston</p> -->
+        <p>Photo by Sean Murray</p>
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/mfa-boston_02.jpg" />
+      </div>
+    </div>
+<!--img#9 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>9/10</p>
+      </div>
+      <div class="txt-item">
+        <!-- <p><em>Contemporary Artists (a publication during a pandemic)</em><br>Museum of Fine Arts, Boston</p> -->
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/mfa-boston_01.jpg" />
+      </div>
+    </div>
+<!--img#10 -->  
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>10/10</p>
+      </div>
+      <div class="txt-item">
+        <p>Direction from Ian Kline</p>
+      </div>
+      <div class="img-item" onclick="next('carousel1')">
+        <img src="assets/terttu-uibopuu_01.jpg" />
+      </div>
+    </div>
+  
 
-<section class="container footer">
-  <div></div>
-  <div class="notes"><a href="https://www.instagram.com/nick.massarelli/" target="_blank">@nick.massarelli</a></div>
 
-  <div class="spending"><a href="mailto:nickmass93@gmail.com" target="_blank">  <p>nickmass93@gmail.com<br></p></a></div>
-</section>
+  <!-- carousel2
+  <div class="slider" id="carousel2">
+    <div class="item4 slide active">
+      <div class="numeral">
+        <p>1/10</p>
+      </div>
+      <div class="txt-item">
+        <p>#</p>
+      </div>
+      <div class="img-item" onclick="next('carousel2')">
+        <img src="assets/img_01.jpg" />
+      </div>
+    </div>
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>2/10</p>
+      </div>
+      <div class="txt-item">
+        <p>Yale School of Art<br>MFA Photo Lecture Series<br><a href="http://www.terttuphoto.com/" target="_blank">Terttu Uibopuu</a><br>Organized by <a href="#" target="_blank">Ian Kline</a></a></p>
+      </div>
+      <div class="img-item" onclick="next('carousel2')">
+        <img src="assets/terttu-uibopuu_01.jpg" />
+      </div>
+    </div>
+    <div class="item4 slide">
+      <div class="numeral">
+        <p>3/10</p>
+      </div>
+      <div class="txt-item">
+        <p>Retrospecta 43<br>Yale School of Architecture<br>w/ Luiza Dale</p>
+      </div>
+      <div class="img-item" onclick="next('carousel2')">
+        <img src="assets/retrospecta_01.jpg" />
+      </div>
+    </div>
+</div> -->
 
-<div><img href="image_01.jpg" /></div>
+  
 
+  <!-- footer -->
+  <div class="container underline2 footer">
+    <div class="item3">
+      <p><a href="https://www.instagram.com/nick.massarelli/" target="_blank">@nick.massarelli</a></p>
+    </div>
+    <div class="item12">
+      <p>Graphic Design</p>
+    </div>
+  </div>
+
+  <!-- javascript -->
+    <script>
+
+    // image slide
+    var slideIndex = 1;
+    
+
+    let slideTracker = {
+      "carousel1" : 1,
+      "carousel2" : 1
+    }
+
+    showSlides("carousel1");
+    showSlides("carousel2");
+
+    // Next/previous controls
+    function next(carousel) {
+        slideTracker[carousel]++
+        showSlides(carousel);
+    }
+
+    // Thumbnail image controls
+    function prev(carousel) {
+        slideTracker[carousel]--
+        showSlides(carousel);
+    }
+
+    // showSlides("carousel1")
+
+    function showSlides(carousel) {
+      const slides = document.querySelectorAll(`#${carousel} .slide`)
+      if(slideTracker[carousel] > slides.length) {slideTracker[carousel] = 1} //go to first slide
+      if(slideTracker[carousel] < 1) {slideTracker[carousel] = slides.length} //go to last slide
+
+      //hide all slides
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideTracker[carousel]-1].style.display = "grid";
+    }
+    </script>
 </body>
+
 </html>
