@@ -1,10 +1,23 @@
 body,
 html {
-    background-color: rgb(184, 151, 42);
-    font-family: helvetica;
+    background-color: white;
+    font-family: 'helvetica neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
+p,h1,h2,li {
+    font-style: normal;
+    font-size: 2em;
+    font-weight: normal;
+}
 
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: 40px;
+}
 
 /* Mobile
 -------------------------------------------------- */
