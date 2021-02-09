@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>575</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+
+  body {
+    font-family: helvetica;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-left {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .item-right {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  img:hover {
+    filter: blur(2px);
+  }
+
+  p{
+    text-align: center;
+    margin: 0;
+  }
+
+  .line-break {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .line-break:hover {
+    filter: blur(2px);
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <a href="">
+      <div class="item-left">
+        <img id="imageContainer">
+      </div>
+    </a>
+    <div class="item-right">
+      <div class="line-break">
+        <a href="">
+          <p id="captionContainer1"></p>
+          <p id="captionContainer2"></p>
+          <p id="captionContainer3"></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- js starts here -->
+  <script>
+    const imageContainer = document.querySelector('#imageContainer');
+    const captionContainer1 = document.querySelector('#captionContainer1');
+
+    const images = ['images/01.jpeg','images/02.jpeg','images/03.jpeg','images/04.jpeg','images/05.jpeg','images/06.jpeg','images/07.jpeg','images/08.jpeg','images/09.jpeg','images/10.jpeg','images/11.jpeg','images/12.jpeg','images/13.jpeg','images/14.jpeg','images/15.jpeg','images/16.jpeg','images/17.jpeg','images/18.jpeg','images/19.jpeg','images/20.jpeg','images/21.jpeg','images/22.jpeg','images/23.jpeg','images/24.jpeg','images/25.jpeg','images/26.jpeg','images/27.jpeg','images/28.jpeg','images/29.jpeg','images/30.jpeg','images/31.jpeg','images/32.jpeg','images/33.jpeg','images/34.jpeg','images/35.jpeg','images/36.jpeg','images/37.jpeg','images/38.jpeg','images/39.jpeg','images/40.jpeg','images/41.jpeg','images/42.jpeg','images/43.jpeg','images/44.jpeg','images/45.jpeg','images/46.jpeg','images/47.jpeg','images/48.jpeg','images/49.jpeg','images/50.jpeg','images/51.jpeg','images/52.jpeg','images/53.jpeg','images/54.jpeg','images/55.jpeg','images/56.jpeg','images/57.jpeg','images/58.jpeg','images/59.jpeg','images/60.jpeg','images/61.jpeg','images/62.jpeg','images/63.jpeg','images/64.jpeg','images/65.jpeg','images/66.jpeg','images/67.jpeg','images/68.jpeg','images/69.jpeg','images/70.jpeg','images/71.jpeg','images/72.jpeg','images/73.jpeg','images/74.jpeg'];
+    const caption = ['An object for stop,','Hanging by a string,','Gathered together,','Hanging overhead,','A tool for transport,','A tunnel through brick,','On November three,','A structural shell,','Made only of stones,','Wood made of metal,','Some weight to keep still,','Destroyed by a car,','When the machine breaks,','Curtains blocking light,','A combination,','A bottle for all,','To start a business,','A colorful front,','That person&#39;s garbage,']
+
+    function setRandomImage() {
+      const randomImageIndex = Math.floor(Math.random() * 74);
+      const randomCaptionIndex = Math.floor(Math.random() * 19);
+      imageContainer.src = images[randomImageIndex];
+      captionContainer1.innerHTML = caption[randomCaptionIndex];
+    }
+
+    window.addEventListener('load',setRandomImage);
+// 2
+    const captionContainer2 = document.querySelector('#captionContainer2');
+    const caption2 = ['wedged in between floor and door,','at the end of October,','amongst a killer virus,','blocking the last of the lights,','back and forth from the archive,','they’ve smashed right into the wall,','in an old gymnasium,','layered with fake wood accents,','a nice prop for the front yard,','traveling faster than ever,','on days when the wind picks up,','flattened into the sidewalk,','the mystery is revealed,','a reflection of nature,','made by hand with what they’ve got,','hanging on by just the chin,','you don’t need to spend too much,','And some appealing product,','can look quite nice when stacked up,']
+
+    function setRandomImage2() {
+      const randomCaption2Index = Math.floor(Math.random() * 19);
+      captionContainer2.innerHTML = caption2[randomCaption2Index];
+    }
+
+    window.addEventListener('load',setRandomImage2);
+// 3
+    const captionContainer3 = document.querySelector('#captionContainer3');
+    const caption3 = ['when weather allows.','a smile for the road.','a taste of last year.','a quick fix for now.','protecting the past.','to make way for veins.','every vote matters.','nobody notice.','especially bright.','to give the right vibe.','please don’t blow away.','it will not grow back.','another coin please.','both inside and out.','it gets the job done.','ready when needed.','just bring your own chair.','the people will come.','good enough for me.']
+
+    function setRandomImage3() {
+      const randomCaption3Index = Math.floor(Math.random() * 19);
+      captionContainer3.innerHTML = caption3[randomCaption3Index];
+    }
+
+    window.addEventListener('load',setRandomImage3);
+  </script>
+</body>
+</html>

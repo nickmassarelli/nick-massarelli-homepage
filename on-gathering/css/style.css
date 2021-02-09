@@ -1,14 +1,32 @@
-body,
-html {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
     background-color: white;
     font-family: 'helvetica neue', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+/* LINK STYLING */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 p,h1,h2,li {
     font-style: normal;
     font-size: 2em;
     font-weight: normal;
+    margin: 0px;
 }
 
 h1 {
@@ -16,7 +34,27 @@ h1 {
 }
 
 .container {
-    margin: 40px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 15fr;
+    padding: 25px;
+    align-items: stretch;
+}
+
+.item1 {
+   
+}
+
+.item2 {
+    grid-column: 1/2;
+    align-self: start;
+}
+
+.item3 {
+    grid-row: 3/4;
+    align-self: end;
+    margin: 0;
 }
 
 /* Mobile
