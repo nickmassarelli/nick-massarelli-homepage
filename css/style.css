@@ -193,9 +193,9 @@ img {
     }
 
     #footer {
-        position: fixed;
+        /* position: fixed;
         bottom: 40px;
-        left: auto;
+        left: auto; */
         font-style: italic;
     }
 
