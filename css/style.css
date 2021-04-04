@@ -109,7 +109,7 @@ img {
 /* Mobile
 -------------------------------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
    
     .container {
         padding-left: 20px;
@@ -125,6 +125,14 @@ img {
          text-align: left;
      }
   
+     #left-column {
+        min-width: inherit;
+        padding-right: 0px;
+    }
+
+    #right-column {
+        min-width: inherit;
+    }
 } 
 
 /* Wide
