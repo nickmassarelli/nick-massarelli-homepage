@@ -154,6 +154,7 @@ img {
     .container{
         padding-left: 0px;
         padding-right: 0px;
+        margin-top: 0px;
     }
 
     html, body {
@@ -192,15 +193,12 @@ img {
         padding-left: 20px;
     }
 
-    #footer {
-        /* position: fixed;
-        bottom: 40px;
-        left: auto; */
-        font-style: italic;
-    }
-
     img {
         display: none;
+    }
+
+    .top {
+        margin-top: 0px;
     }
 
 }
