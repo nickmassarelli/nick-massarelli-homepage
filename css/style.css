@@ -10,6 +10,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
     font-size: 1.25em;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -81,8 +82,9 @@ h1 {
 }
 
 .header {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* font-family: 'Courier New', Courier, monospace; */
+    font-style: italic;
     margin-bottom: 20px;
     margin-top: 40px;
 }
@@ -193,12 +195,32 @@ img {
         padding-left: 20px;
     }
 
+    .top {
+        margin-top: 0px;
+    }
+
+/* display none */
+
     /* img {
         display: none;
     } */
 
-    .top {
-        margin-top: 0px;
+/* reveal link */
+
+    /* a[href]:after {
+        content: " ("attr(href)")";
+    } */
+
+/* break page */
+
+    /* .break {
+        page-break-before: always;
+    } */
+
+/* end note */
+
+    .container::after {
+        content: "";
     }
 
 }
