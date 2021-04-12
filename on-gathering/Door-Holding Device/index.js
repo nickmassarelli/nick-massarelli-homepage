@@ -1,4 +1,4 @@
-let channel = 'propped-doors-ph8d7fwfmac';
+let channel = 'door-holding-device';
 let makeURL = (per, page) => `https://api.are.na/v2/channels/${channel}?per=${per}&page=${page}`;
 
 // Get metadata
