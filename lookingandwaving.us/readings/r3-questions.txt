@@ -1,0 +1,6 @@
+r3 questions:
+
+1. What exactly is the purpose of alt text?
+2. Isn't there already some system in place of how to write alt text?
+3. Why is Shannon Finnegan connecting alt text with instagram captions? They seem to serve very different purposes.
+4. What are some other examples of efforts of accessibility on the web?

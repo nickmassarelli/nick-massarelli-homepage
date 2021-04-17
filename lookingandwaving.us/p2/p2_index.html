@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>51 Images</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.jpg">
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <!--link to css-->
+  <link rel="stylesheet" type="text/css" href="p3.css">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+<style>
+::selection {
+  background: #cddc39; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #cddc39; /* Gecko Browsers */
+}
+
+body {
+  /* background-color: #eff0ef; */
+  margin: 43px 0px 0px 0px;
+  font-family: "helvetica", Times, serif;
+  font-size: 20px;
+  cursor: url('../cursor_02.png') 35 45, default;
+}
+body:active{
+    cursor: url('../cursor_03.png') 35 45, default;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+  grid-template-rows: minmax(auto, auto);
+  grid-gap: 30px;
+}
+
+
+div {
+  border-radius: 0px;
+}
+
+.top-header{
+  background-color: transparent;
+}
+
+p{
+  margin: 0px;
+}
+
+.a{
+  color: #1487c4;
+}
+
+.notes{
+  color: #eb3c3f;
+  padding: 10px;
+}
+
+.hr{
+  grid-column: 1 / 5;
+  margin: 0px;
+  border-bottom: 1px solid black;
+}
+
+nav{
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* border-bottom: 1px solid black; */
+  background-color: white;
+}
+
+nav .container {
+  margin: 0;
+  padding: 10px;
+}
+nav:active{
+cursor: url('../cursor_03.png') 35 45, default;
+}
+
+.container.two{
+  border-bottom: 1px solid black;
+  background: none;
+}
+
+.note-header{
+  margin-bottom: 0x;
+}
+
+.note-body{
+  margin-bottom: 15px;
+}
+
+ul{
+  padding-left: 20px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+a{
+  color: #eb3c3f;
+  cursor: url('../cursor_03.png') 35 45, default;
+}
+/* unvisited link */
+a:link {
+  color: #eb3c3f;
+  text-decoration: none;
+}
+
+/* visited link */
+
+.to-do{
+  list-style-type: circle;
+}
+
+/* HOME BUTTON */
+.home{
+  color: black;
+}
+/* unvisited link */
+.home:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+.home:visited {
+  color: black;
+}
+
+.home:hover {
+  color: #cddc39;
+  text-decoration: none;
+}
+
+/* selected link */
+.home:active {
+  color: black;
+}
+.to-do{
+  list-style-type: circle;
+}
+/* HOME BUTTON */
+
+.container.ball{
+    grid-template-columns: 1fr;
+z-index: -10;
+  height: 30px;
+  width: 30px;
+ animation:
+   pulse 5s ease infinite alternate,
+   nudge 5s linear infinite alternate;
+ border-radius: 50%;
+position: fixed;
+top:6px;
+padding: 0px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #e0dfdf;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(calc(100vw - 30px), 0);
+  }
+}
+.date{
+  padding: 10px;
+  color: #1487c4;
+}
+
+.date.video{
+  background-color: blue;
+}
+.stretch{
+  grid-column: 2 / 5;
+
+}
+.stretch.video{
+  background-color: #e0dfdf;
+  padding: 50px;
+}
+</style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container ball">
+    </div>
+    <div class="container two">
+
+      <div class="top-header notebook-header"><p>Project #2</p></div>
+      <div class="top-header"><p><a class="home" href="../index.html">Looking & Waving</a></p></div>
+      <div>51 Images</div>
+    </div>
+  </nav>
+
+  <!-- 11.23.19 START -->
+  <section class="container post">
+
+      <div class="date"><p>Part 1:</p><p style="color:#eb3c3f">Poster <br>&#8594;</p></div>
+
+
+        <img class="stretch" src="images/p2_poster_05.jpg" width="100%">
+
+
+
+    </section>
+  <!-- 11.23.19 END --->
+
+        <div class="hr"></div>
+
+  <!-- 10.29.19 END -->
+  <section class="container post">
+
+      <div class="date"><p>Part 2:</p><p style="color:#eb3c3f">Book <br>&#8594;</p></div>
+
+
+        <img class="stretch" src="images/pub_06.jpg" width="100%">
+
+    </section>
+
+    <!-- 11.23.19 END --->
+
+          <div class="hr"></div>
+
+    <!-- 10.29.19 END -->
+    <section class="container post">
+
+        <div class="date"><p>Part 3:</p><p style="color:#eb3c3f">Video<br>&#8594;</p></div>
+<div class="stretch video" width="100%">
+                  <iframe src="https://player.vimeo.com/video/367937038"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen width="100%" height="500px"></iframe>
+</div>
+      </section>
+    <div class="hr"></div>
+</body>
+</html>

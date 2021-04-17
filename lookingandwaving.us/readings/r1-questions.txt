@@ -1,0 +1,5 @@
+r1 questions:
+
+1. If metadata is “data about data” then in the scenario of an object label in an art museum, would that actual work of art be considered data? Would it still be considered metadata if the data is describing an object?
+2. The automization of creating metadata will make the creation much faster but will it also make it less accurate? What happens when large quantities of inaccurate metadata are created?
+3. Can you think of a storage or archiving system where metadata is not needed or would be harmful?

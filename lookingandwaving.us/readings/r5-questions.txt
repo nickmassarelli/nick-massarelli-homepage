@@ -1,0 +1,5 @@
+r5 questions:
+
+1. I’ve always wondered, are customer reviews controlled in any way? How would that be monitored?
+2. I often think about how reviews can be damaging to someone’s career. Is there (or should there be) a code of ethics when reviewing service publicly?
+3. Why aren’t there more parts of the web that offer easy creation of a “page?” Im surprised that there are not more standardized ways of making website’s, similarly to the standardization of text editing applications (i can only think of 3, total).

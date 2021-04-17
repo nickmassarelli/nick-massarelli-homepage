@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>p1_22</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+
+  <style>
+
+  ::-moz-selection {
+    background: green;
+  }
+
+  ::selection {
+    background: green;
+  }
+
+body {
+
+  }
+
+/* GRID START*/
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    grid-gap: 10px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: "helvetica", Times, serif;
+    text-align: center;
+    padding-top: 26px;
+  }
+
+  .item-a{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: purple;
+    color: white;
+    font-size: 4em;
+
+    text-align: left;
+    border-radius: 100px;
+    padding-left: 45px;
+  }
+
+ .items:hover{
+    background-color: yellow;
+  }
+
+.items{
+    background-color: green;
+    padding-top: 45px;
+    text-align: left;
+    padding-left: 50px;
+    border-radius: 100px;
+  }
+
+.category{
+    font-weight: bold;
+  }
+
+  body {
+    margin: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+  }
+  /* GRID END*/
+
+  /* NAV START */
+
+      nav{
+        position: fixed;
+        border-bottom:1px solid red;
+        width:100%;
+        top:0;
+        padding-left: 10px;
+        height: 25px;
+        padding-top:10px;
+        font-family: 'Work Sans', sans-serif;
+        background-color: white;
+        font-size: 12px;
+        left: 0px;
+      }
+
+      .next {
+        text-decoration: none;
+        color: black;
+        position: fixed;
+        top: 10px;
+        right:10px;
+      }
+      .next:hover{
+        text-decoration: line-through;
+      }
+
+      .previous {
+        text-decoration: none;
+        color: black;
+        position: fixed;
+        top: 10px;
+        left:10px;
+      }
+
+      .previous:hover{
+        text-decoration: line-through;
+      }
+
+      .home {
+        text-decoration: none;
+        color: black;
+        position: fixed;
+        top: 10px;
+        text-align: center;
+        left: 300px;
+        right:300px;
+      }
+
+      .home:hover{
+        text-decoration: line-through;
+      }
+
+  /* NAV END */
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+     <a href="p1_23.html" class="next">Next</a>
+     <a href="p1_21.html" class="previous">Previous</a>
+     <a href="../index.html" class="home">Home</a>
+  </nav>
+
+  <section class="container">
+
+    <div class="item-a">
+    <p>p1_22</p>
+    </div>
+
+    <div class="items">
+      <p class="category">dimensions</p>
+      <p>.75” x 1.25” x .25”</p>
+    </div>
+
+    <div class="items">
+      <p class="category">color</p>
+      <p>olive green</p>
+    </div>
+
+    <div class="items">
+      <p class="category">smell</p>
+      <p>plastic</p>
+    </div>
+
+    <div class="items">
+      <p class="category">taste</p>
+      <p>plastic</p>
+    </div>
+
+    <div class="items">
+      <p class="category">age</p>
+      <p>90 years old (1930’s)</p>
+    </div>
+
+    <div class="items">
+      <p class="category">shape/form</p>
+      <p>organic</p>
+    </div>
+
+    <div class="items">
+      <p class="category">character / personality</p>
+      <p>theatrical, observant, welcoming</p>
+    </div>
+
+    <div class="items">
+      <p class="category">weight</p>
+      <p>>1oz</p>
+    </div>
+
+    <div class="items">
+      <p class="category">material / texture</p>
+      <p>plastic</p>
+    </div>
+
+    <div class="items">
+      <p class="category">utility</p>
+      <p>to play, display, decorate</p>
+    </div>
+
+    <div class="items">
+      <p class="category">rarity</p>
+      <p>common</p>
+    </div>
+
+    <div class="items">
+      <p class="category"></p>
+      <p></p>
+    </div>
+
+</section>
+
+</body>
+
+<!-- /* <style>
+​​
+​​.class-name:hover {
+​​  font-size: 0;
+​​}
+​​
+​​.class-name:hover:after {
+​​  content: attr(data-hover);
+​​  font-size: 15px;
+​​}
+​​
+​​</style>
+​​
+​​<body>
+​​
+​​<div class="class-name" data-hover="after hover"> before hover
+​​</div>
+​​
+​​</body> */ -->
+
+</html>

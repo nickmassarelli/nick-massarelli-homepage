@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Screensaver & Score</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+<style>
+
+::selection {
+  background: #cddc39; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #cddc39; /* Gecko Browsers */
+}
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+    cursor: url('../cursor_02.png') 35 45, default;
+
+}
+
+
+body:active{
+    cursor: url('../cursor_03.png') 35 45, default;
+}
+.box {
+  /* center horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* appearance */
+  width: 24.75em;
+  height: 36.75em;
+  border-radius: 0%;
+  background-color: white;
+}
+.crossbar{
+  /* background-color: #ff073a; */
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+
+
+}
+.vertical{
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1487c4;
+}
+.horizontal{
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1487c4;
+}
+.dot{
+  background-color: #eb3c3f;
+  position: absolute;
+  width: .55em;
+  height: .55em;
+  border-radius: 50%;
+  margin: 7px 0px 0px 0px;
+
+}
+
+.sticker1{
+
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  top:-16px;
+  left:60px;
+}
+
+.sticker2{
+
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  top:-16px;
+  right:60px;
+}
+
+.instructions{
+  margin-top: 180px;
+  width: 50%;
+}
+
+.instructions p{
+  margin-bottom: 20px;
+}
+p{
+  color: white;
+  font-family: helvetica;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+  grid-template-rows: minmax(auto, auto);
+  grid-gap: 30px;
+  padding: 10px;
+}
+
+
+.container.two{
+  border-bottom: 1px solid white;
+  background: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+    cursor: url('../cursor_03.png') 35 45, default;
+}
+
+.home:hover {
+  color: #cddc39;
+  text-decoration: none;
+}
+.follow{
+  margin-left: 15px;
+}
+
+.home.hidden{
+  color: white;
+  font-size: .25em;
+}
+.home2{
+  color: #eb3c3f;
+}
+.home2:hover{
+  color: #cddc39;
+}
+</style>
+</head>
+
+<body>
+  <div class="container two">
+
+    <div class="top-header notebook-header"><p>Project #4</p></div>
+    <div class="top-header"><p><a class="home" href="../index.html">Looking & Waving</a></p></div>
+    <div><p>Screensaver & Score</p></div>
+    <div><p></p></div>
+  </div>
+
+  <div class="box">
+    <p class="home hidden">lint roller</p>
+    <div>
+      <span class="sticker1">
+        <div class="crossbar">
+          <div class="vertical"></div>
+          <div class="horizontal"></div>
+        </div>
+      </span>
+    </div>
+
+    <div>
+      <span class="sticker2">
+        <div class="crossbar">
+          <div class="vertical"></div>
+          <div class="horizontal"></div>
+        </div>
+      </span>
+    </div>
+
+    <svg class="svgsvg" viewBox="-52 -65 396 588">
+      <path fill="none" stroke="none"
+        d="M129.51,1.73c0-0.68,0.55-1.23,1.23-1.23h31.75c0.68,0,1.23,0.55,1.23,1.23v44.24h-8.55v-7.2
+	c0-4.72-3.83-8.55-8.55-8.55h0c-4.72,0-8.55,3.83-8.55,8.55v18.46c0,4.72,3.83,8.55,8.55,8.55h0.01c4.72,0,8.55-3.83,8.55-8.55
+	V45.97h8.54v5.96v155.59c0,0.68-0.55,1.23-1.23,1.23h-20.38h7.81v54.84c0,1.17-0.31,2.33-0.9,3.34l-12.14,20.76
+	c-0.72,1.23-1.1,2.63-1.1,4.05v3.75c0,0.98,0.79,1.77,1.77,1.77h128.84c7.41,0,13.41,6,13.41,13.41v48.2c0,4.26-3.45,7.71-7.71,7.71
+	l-4.84-0.01l-0.49-6.32l0.49,6.32l-2.42,31.88c-0.31,4.06-3.7,7.2-7.77,7.2H11.12c-4.38,0-8-3.39-8.31-7.75l-2.16-31.11
+	c-0.2-2.92-0.2-5.84,0.02-8.76l2.11-28.76c0.32-4.35,3.94-7.72,8.31-7.72h245.46c4.07,0,7.46,3.13,7.77,7.19l2.44,31.51h3.44
+	c0.85,0,1.54-0.69,1.54-1.54v-48.99c0-2.4-1.95-4.35-4.35-4.35H133.73c-3.8,0-6.87-3.08-6.87-6.87V290c0-1.5,0.42-2.97,1.21-4.24
+	l13.05-21.01c0.65-1.05,1-2.26,1-3.49v-52.51h-11.36c-0.68,0-1.23-0.55-1.23-1.23L129.51,1.73z" />
+      <circle r="10" fill="#1487c4">
+      <animateMotion dur="60s" repeatCount="indefinite"
+        path="M129.51,1.73c0-0.68,0.55-1.23,1.23-1.23h31.75c0.68,0,1.23,0.55,1.23,1.23v44.24h-8.55v-7.2
+	c0-4.72-3.83-8.55-8.55-8.55h0c-4.72,0-8.55,3.83-8.55,8.55v18.46c0,4.72,3.83,8.55,8.55,8.55h0.01c4.72,0,8.55-3.83,8.55-8.55
+	V45.97h8.54v5.96v155.59c0,0.68-0.55,1.23-1.23,1.23h-20.38h7.81v54.84c0,1.17-0.31,2.33-0.9,3.34l-12.14,20.76
+	c-0.72,1.23-1.1,2.63-1.1,4.05v3.75c0,0.98,0.79,1.77,1.77,1.77h128.84c7.41,0,13.41,6,13.41,13.41v48.2c0,4.26-3.45,7.71-7.71,7.71
+	l-4.84-0.01l-0.49-6.32l0.49,6.32l-2.42,31.88c-0.31,4.06-3.7,7.2-7.77,7.2H11.12c-4.38,0-8-3.39-8.31-7.75l-2.16-31.11
+	c-0.2-2.92-0.2-5.84,0.02-8.76l2.11-28.76c0.32-4.35,3.94-7.72,8.31-7.72h245.46c4.07,0,7.46,3.13,7.77,7.19l2.44,31.51h3.44
+	c0.85,0,1.54-0.69,1.54-1.54v-48.99c0-2.4-1.95-4.35-4.35-4.35H133.73c-3.8,0-6.87-3.08-6.87-6.87V290c0-1.5,0.42-2.97,1.21-4.24
+	l13.05-21.01c0.65-1.05,1-2.26,1-3.49v-52.51h-11.36c-0.68,0-1.23-0.55-1.23-1.23L129.51,1.73z" />
+  </circle>
+    </svg>
+
+  </div>
+  <section class="container">
+    <div></div>
+
+    <div></div>
+
+</section>
+</body>
+
+</html>
