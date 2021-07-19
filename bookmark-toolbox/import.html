@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bookmark toolbox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        ::selection {
+            background: #cddc39;
+            /* WebKit/Blink Browsers */
+        }
+
+        ::-moz-selection {
+            background: #cddc39;
+            /* Gecko Browsers */
+        }
+
+        body {
+            background-color: white;
+            margin: 88px 0px 0px 0px;
+            font-family: "helvetica", Times, serif;
+            font-size: 20px;
+            cursor: url('cursor_02.png') 35 45, default;
+            width: 100vw;
+            height: 90vh;
+        }
+
+        body:active {
+            cursor: url('cursor_03.png') 35 45, default;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 4fr 2fr 1fr 1fr 1fr;
+            grid-template-rows: minmax(auto, auto);
+            grid-gap: 30px;
+        }
+
+        div {
+            border-radius: 0px;
+        }
+
+        .top-header {
+            background-color: transparent;
+        }
+
+        .Instructions{
+            grid-column: 2 / 5;
+        }
+
+        p {
+            margin: 0px;
+            letter-spacing: -.125px;
+        }
+
+        .notes {
+            color: black;
+            margin-bottom: 1px;
+        }
+
+        .hr {
+            grid-column: 1 / 5;
+            margin: 0px;
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        nav .container {
+            margin: 0;
+            padding: 10px;
+        }
+
+
+        svg{
+            margin-bottom: -5px;
+        }
+        .categories{
+
+        }
+        .footer{
+            position: fixed;
+            bottom:0px;
+            width: 100vw;
+            border-top: 1px solid black;
+            border-bottom: none;
+            background-color: pink;
+        }
+        .select1:hover {
+          background-color: pink;
+        }
+        .indent{
+            text-indent: 50px;
+        }
+        .logo{
+            grid-column-start: 3;
+            position: fixed;
+            bottom: 37px;
+            width: 100vw;
+            border-bottom: none;
+        }
+        path{
+            margin: 0px;
+            align-items: baseline;
+        }
+        svg{
+            margin-bottom: -80px;
+        }
+        .bookmark-image{
+            grid-column: 2 / 5;
+        }
+        /* .about{
+            grid-column: 2 / 3;
+        } */
+        .submit{
+            grid-column: 3 / 5;
+        }
+
+        .paragraph{
+            margin-bottom: 10px;
+        }
+
+        img{
+            border-radius: 1%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="top-header notebook-header imageryparent">
+                <img id="one" class="imagesforslider" style="float:left;" src="assets/image_01.JPG" alt="Smiley face" height="550">
+                <img id="two" class="imagesforslider" style="float:left;" src="assets/image_03.jpg" alt="logo" height="150">
+            </div>
+            <div class="top-header Instructions">
+
+            </div>
+            <div class="top-header notebook-header">
+                <p></p>
+            </div>
+            <div class="top-header">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="container categories footer">
+            <div class="top-header">
+                <p><a href="index.html">bookmark toolbox&trade;</a></p>
+            </div>
+            <div class="top-header notebook-header about">
+                <p><a href="import.html">about this website</a></p>
+            </div>
+            <div class="top-header notebook-header submit">
+                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdaIypM0ukL4t1tk_hAUa_lar6lncm2bJM2xky0B5Q6FAK-5A/viewform?usp=sf_link" target="_blank">submit a collection</a></p>
+            </div>
+            <div class="top-header">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="container categories logo">
+            <div class="top-header notebook-header bookmark-image">
+                <p class="paragraph">bookmark toolbox™</p>
+                <p class="paragraph">This website is a place for publishing and sharing browser bookmarks.</p>
+                <p class="paragraph">Bookmarks are typically used in a practical way, but I wonder what happens when they are used unconventionally. Can bookmarks become a structure for writing, curating, documenting, or citing?</p>
+                <p class="paragraph">All are invited to submit collections of their own. Contributors are encouraged to consider naming conventions, folder structuring, and sequencing.</p>
+                <p class="paragraph">Each contributor will receive physical bookmarks in the mail printed with their collection title.</p>
+                <p class="paragraph"><a href="https://drive.google.com/file/d/1l6nsJcI3oJms7WUBV_SpSuWiAJGI7g9P/view?usp=sharing" target="_blank">– How to export bookmark files</a><a href="https://drive.google.com/file/d/102SmwYpit3DR1NDpnVAzlvQw7G8TCEWq/view?usp=sharing" target="_blank"><br>– How to import bookmark files</a></p>
+                <!-- <img src="assets/image_03.JPG" alt="Smiley face" height="200"> -->
+                <!-- <p><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve"><path d="M63.22,26.78v-1.5c-14.45,0-26.72,9.52-30.86,22.62V0h-1.5v47.9C26.72,34.8,14.45,25.28,0,25.28v1.5
+	c16.77,0,30.44,13.44,30.84,30.11H0v1.5h63.22v-1.5H32.38C32.78,40.22,46.46,26.78,63.22,26.78z"/></svg></p> -->
+            </div>
+            <div class="top-header notebook-header">
+                <p></p>
+            </div>
+        </div>
+
+    </nav>
+</body>
+
+</html>

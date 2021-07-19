@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bookmark toolbox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        ::selection {
+            background: #cddc39;
+            /* WebKit/Blink Browsers */
+        }
+
+        ::-moz-selection {
+            background: #cddc39;
+            /* Gecko Browsers */
+        }
+
+        body {
+            background-color: white;
+            margin: 88px 0px 0px 0px;
+            font-family: "helvetica", Times, serif;
+            font-size: 20px;
+            cursor: url('cursor_02.png') 35 45, default;
+            width: 100vw;
+            height: 90vh;
+        }
+
+        body:active {
+            cursor: url('cursor_03.png') 35 45, default;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: url('cursor_03.png') 35 45, default;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 4fr 2fr 1fr 1fr 1fr;
+            grid-template-rows: minmax(auto, auto);
+            grid-gap: 30px;
+        }
+
+        div {
+            border-radius: 0px;
+        }
+
+        .top-header {
+            background-color: transparent;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        .notes {
+            color: black;
+            margin-bottom: 1px;
+        }
+
+        .hr {
+            grid-column: 1 / 5;
+            margin: 0px;
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border-bottom: 1px solid black;
+            cursor: url('cursor_02.png') 35 45, default;
+        }
+
+        nav .container {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .container.two {
+            border-bottom: 1px solid black;
+        }
+        svg{
+            margin-bottom: -5px;
+        }
+        .categories{
+            background-color: pink;
+        }
+        .footer{
+            position: fixed;
+            bottom:0px;
+            width: 100vw;
+            border-top: 1px solid black;
+            border-bottom: none;
+            background-color: pink;
+        }
+        .select1:hover {
+          background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container two categories">
+            <div class="top-header notebook-header">
+                <p>collection title</p>
+            </div>
+            <div class="top-header">
+                <p><a class="home" href="index.html">download</a></p>
+            </div>
+            <div class="top-header notebook-header">
+                <p>submitted by</p>
+            </div>
+            <div class="top-header">
+                <p><a class="home" href="index.html"></a>published date</p>
+            </div>
+        </div>
+
+        <div class="container two select1">
+            <div class="top-header notebook-header">
+                <p>YSoA GD – spring 2020</p>
+            </div>
+            <div class="top-header">
+                <a href="assets/YSoA GD – spring 2020.zip">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                        <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                        H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="top-header notebook-header">
+                <p>Nick Massarelli</p>
+            </div>
+            <div class="top-header">
+                <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+            </div>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>YSoA – financial aid 2020/21</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/YSoA – financial aid 2020/21.zip
+
+                    ">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>YSoA – website shortcuts</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/YSoA – website shortcuts.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>YSoA – library resources</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/YSoA – library resources.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>lunch suggestions</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/lunch suggestions.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>suggested reading, march 2020</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/suggested reading, march 2020.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>code-resources</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/code-resources.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>playlists</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/playlists.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container two select1">
+                <div class="top-header notebook-header">
+                    <p>Go All the Way – Charles Bukowski</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/Go All the Way – Charles Bukowski.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="container select1">
+                <div class="top-header notebook-header">
+                    <p>hyperlink journey</p>
+                </div>
+                <div class="top-header">
+                    <a href="assets/hyperlink journey.zip">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" viewBox="0 0 63.22 80.94" style="enable-background:new 0 0 63.22 80.94;" xml:space="preserve">
+                            <path d="M63.22,49.33v-5c-12.31,0-23.11,6.55-29.11,16.35V0h-5v60.68c-6-9.8-16.8-16.35-29.11-16.35v5c15.21,0,27.72,11.73,29,26.61
+                            H0v5h63.22v-5h-29C35.5,61.06,48.01,49.33,63.22,49.33z" />
+                        </svg>
+                </div>
+                <div class="top-header notebook-header">
+                    <p>Nick Massarelli</p>
+                </div>
+                <div class="top-header">
+                    <p><a class="home" href="assets/spring-semester-2020_yale-gd-mfa_01.html">03.02.20</a></p>
+                </div>
+            </a>
+        </div>
+
+        <div class="container categories footer">
+            <div class="top-header">
+                <p>bookmark toolbox&trade;</p>
+            </div>
+            <div class="top-header notebook-header">
+                <p><a href="import.html">instructions</a></p>
+            </div>
+            <div class="top-header notebook-header">
+                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdaIypM0ukL4t1tk_hAUa_lar6lncm2bJM2xky0B5Q6FAK-5A/viewform?usp=sf_link" target="_blank">submit a collection</a></p>
+            </div>
+            <div class="top-header">
+                <p><a class="home" href="https://docs.google.com/forms/d/e/1FAIpQLSdkDV8X5hdVKcR6JaXcN8Twqxf4cbZUpuaf_S9oQmHvf1DYVw/viewform?usp=sf_link" target="_blank"></a>submit an addition</p>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function() {
+            $('.container').click(function() {
+                $(this).css('display', 'none');
+            }).mouseenter(function() {
+                $(this).css('color', 'red');
+            }).mouseleave(function() {
+                $(this).css('color', 'blue');
+            });
+            $('.container a').click(function() {
+                $(this).closest('.container').css('font-size', '24px');
+            });
+        });
+    </script>
+</body>
+
+</html>
