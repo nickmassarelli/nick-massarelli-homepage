@@ -5,7 +5,7 @@
 }
 
 html, body {
-    background-color: white;
+    background-color: ivory;
     font-family: Helvetica Neue, helvetica;
     -webkit-font-smoothing: antialiased;
     margin: 0;
@@ -93,6 +93,7 @@ h1 {
 img {
       width: 100%;
       margin-top: 30px;
+      mix-blend-mode: multiply;
   }
 
 
