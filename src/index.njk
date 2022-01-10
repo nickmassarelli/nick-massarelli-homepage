@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Nick Massarelli</title>
+
+    <!-- TODO: customize meta description -->
+    <meta
+      name="description"
+      content="This is the online syllabus for the Yale Spring 21 course On Gathering by Mindy Seu"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/microbe_1f9a0.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/microbe_1f9a0.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body class="is-loading">
+    <div class="container">
+      <div class="column">
+        <p class="header name top" style="font-style: normal">
+          Nicholas Massarelli <br />Graphic Design <button class="desktop-only js-view-images-button">(View Images)</button>
+        </p>
+
+        <ul>
+          <li class="contact-info-indent">
+            <p>
+              <a href="https://www.instagram.com/nick.massarelli/"
+                >@nick.massarelli</a
+              >
+            </p>
+            <p>nickmass93@gmail.com</p>
+            <p>508.769.6405</p>
+            <p>Brooklyn, NY</p>
+          </li>
+        </ul>
+
+        <ul id="footer">
+          <li>
+            <p id="download-button">
+              <a href="assets/nick-massarelli_resume_01.pdf" download
+                >Download Résumé</a
+              >&nbsp;↓
+            </p>
+            <p>Last updated: October, 2021</p>
+          </li>
+        </ul>
+
+        <div class="image-slider js-image-slider">
+          <div class="embla js-embla">
+            <div class="embla-container">
+              {% for slide in slider %}
+                <div class="embla-slide">
+                    <div class="embla-slide-image-container">
+                      <img
+                        class="mobile-only"
+                        src="{{ slide.mobileImage.src }}"
+                        alt="{{ slide.mobileImage.alt }}"
+                      >
+                      <img
+                        class="desktop-only"
+                        src="{{ slide.desktopImage.src }}"
+                        alt="{{ slide.desktopImage.alt }}"
+                      >
+                    </div>
+                    <div class="embla-slide-text">
+                      <p class="embla-slide-caption js-caption">{{ slide.caption | safe }}</p>
+                      <p class="embla-slide-progress">{{ loop.index }}/{{ slider | length }}</p>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="image-slider-caption desktop-only js-caption-container"></div>
+          <div class="image-slider-progress desktop-only"><span class="js-progress">1</span>/{{ slider | length }}</div>
+          <div class="cursor js-cursor" data-icon="close">            
+            <svg class="cursor-icon cursor-icon--next" width="60" viewBox="0 0 174.96 133.92">
+              <path d="M0 62.46h104.76v9H0z"/>
+              <path d="M112.5 0h-9A71.58 71.58 0 0 0 150 67a71.58 71.58 0 0 0-46.52 67h9A62.53 62.53 0 0 1 175 71.46v-9A62.53 62.53 0 0 1 112.5 0Z"/>
+            </svg>
+            <svg class="cursor-icon cursor-icon--prev" width="60" viewBox="0 0 174.96 133.92">
+              <path d="M70.2 62.46h104.76v9H70.2z"/>
+              <path d="M24.94 67A71.58 71.58 0 0 0 71.46 0h-9A62.53 62.53 0 0 1 0 62.46v9a62.53 62.53 0 0 1 62.46 62.46h9A71.58 71.58 0 0 0 24.94 67Z"/>
+            </svg>
+            <svg class="cursor-icon cursor-icon--close" width="40" viewBox="0 0 109.25 109.25">
+              <path d="M109.25 102.89 60.99 54.62l48.26-48.25L102.89 0 54.63 48.26 6.36 0 0 6.36l48.26 48.26L0 102.89l6.36 6.36 48.27-48.26 48.26 48.26 6.36-6.36z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="times">
+          <p class="header">Recent</p>
+          <ul>
+            <li>
+              <p class="title">
+                I was invited by Mianwei Wang to organize a one-day workshop for
+                her
+                <a href="http://ease-in.glitch.me/">interactive design class</a>
+                at Parsons.
+              </p>
+            </li>
+            <li>
+              <p class="title">
+                We celebrated our 8th issue of
+                <a href="https://firstlast.us/">First Last</a> on August 21st at
+                <a href="https://middlechildphilly.com/">Middle Child</a>
+                Philadelphia.
+              </p>
+            </li>
+            <li>
+              <p class="title">
+                I recently served as a guest critic for Matt Wolff's
+                Introduction to Interactive Design at Yale School of Art.
+              </p>
+            </li>
+            <li>
+              <p class="title">
+                Currently working on independent projects with Brown University
+                Arts Institute,
+                <a href="https://iota-editions.com/">IOTA Editions</a>, Yale
+                Photography (w/
+                <a href="https://annasagstrom.com/">Anna Sagström</a>), and
+                <a href="https://smog-press.xyz/">Smog Press</a>.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="ornament-image" src="assets/Screen Shot 2021-04-05 at 4.06.16 PM.png" />
+        </div>
+      </div>
+
+      <div class="column">
+        <p class="header top">Projects</p>
+        <ul>
+          <li>
+            <p class="title">First Last</p>
+            <p class="sub">
+              A periodic artist publication, consisting of ten posters, folded
+              into book form, showcasing the work of four artists per issue. W/
+              Sean Murray.
+              <a href="https://firstlast.us/">www.firstlast.us</a>&nbsp;→
+              <a href="https://firstlast.us/">@firstlast.us</a>&nbsp;→
+            </p>
+          </li>
+          <!-- <li>
+            <p class="title">3B Collective</p>
+            <p class="sub">
+              Self-published literary experiments featuring the writing of
+              collaborator M. DiGuilmi.
+              <a href="https://www.instagram.com/3b_collective/">@3b_collective</a>&nbsp;→
+            </p>
+          </li> -->
+        </ul>
+
+        <p class="header">Education</p>
+        <ul>
+          <li>
+            <p class="title">Yale School of Art, New Haven, CT</p>
+            <p class="sub">MFA in Graphic Design, 2021</p>
+          </li>
+          <li>
+            <p class="title">Typography Summer School, London, UK</p>
+            <p class="sub">Summer 2017</p>
+          </li>
+          <li>
+            <p class="title">Drexel University, Philadelphia, PA</p>
+            <p class="sub">BS in Graphic Design, 2015</p>
+          </li>
+        </ul>
+
+        <p class="header">Experience</p>
+        <ul>
+          <li>
+            <p class="title">Actual Source</p>
+            <p class="sub">Senior Designer, Current</p>
+          </li>
+          <li>
+            <p class="title">Yale University Art Gallery</p>
+            <p class="sub">Graphic Designer, 2019-2021</p>
+          </li>
+          <li>
+            <p class="title">Philadelphia Museum of Art</p>
+            <p class="sub">Graphic Designer, 2018-2019</p>
+          </li>
+          <li>
+            <p class="title">Philadelphia Magazine</p>
+            <p class="sub">Associate Art Director, 2016-2018</p>
+          </li>
+        </ul>
+
+        <p class="header">Teaching Assistance</p>
+        <ul>
+          <li>
+            <p class="title">Advanced Graphic Design</p>
+            <p class="sub">Yale University, Spring 2020</p>
+            <p class="sub">Taught by Henk van Assen</p>
+          </li>
+          <li>
+            <p class="title">Introduction to Graphic Design</p>
+            <p class="sub">Yale University, Fall 2020</p>
+            <p class="sub">Taught by Henk van Assen</p>
+          </li>
+          <li>
+            <p class="title">Introduction to Interactive Design</p>
+            <div class="sub">
+              <span>Yale University, Summer 2020</span>
+              <p class="sub">Taught by Matt Wolff</p>
+              <p class="sub">
+                <a href="https://yss20.matt-wolff.com/">yss20.matt-wolff.com</a>
+                →
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
