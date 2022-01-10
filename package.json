@@ -1,0 +1,16 @@
+{
+  "name": "nickmassarelli.com",
+  "author": "Nick Massarelli",
+  "private": "true",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickmassarelli/nickmassarelli.com.git"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
